@@ -1,17 +1,18 @@
 package at.co.feineweine.model;
 
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
 import java.util.UUID;
 
 public class Events {
 
     private String name;
     private String description;
-    private SimpleDateFormat date;
+    private LocalDate date;
     private Double price;
     private Customer customer;
 
-    public Events(String name, String description, SimpleDateFormat date, Double price, Customer customer) {
+    public Events(String name, String description, LocalDate date, Double price, Customer customer) {
         this.name = name;
         this.description = description;
         this.date = date;
@@ -35,11 +36,11 @@ public class Events {
         this.description = description;
     }
 
-    public SimpleDateFormat getDate() {
+    public LocalDate getDate() {
         return date;
     }
 
-    public void setDate(SimpleDateFormat date) {
+    public void setDate(LocalDate date) {
         this.date = date;
     }
 

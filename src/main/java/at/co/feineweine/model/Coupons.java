@@ -1,7 +1,5 @@
 package at.co.feineweine.model;
 
-import java.util.UUID;
-
 public class Coupons {
 
     private Double value;
